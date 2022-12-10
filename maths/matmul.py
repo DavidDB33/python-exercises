@@ -35,5 +35,3 @@ def transpose(mat):
            [ 1,  1]]
     """
     return mat.T # HAZ AQUÍ TU FUNCIÓN
-
-

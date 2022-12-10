@@ -61,9 +61,11 @@ def main():
 
     total = calcula_total(cesta, precios)
     muestra_total(total)
-    cambio = calcula_cambio(total, monedas)
+    print("Tome, un billete de 50€")
+    cambio_valor = 50 - total
+    cambio = calcula_cambio(cambio_valor, monedas)
     muestra_cambio(cambio)
-    if sum(cambio.values()) > 3:
+    if sum(cambio.values()) > 10:
         print(" + No puedo con tantas monedas!")
     else:
         print(" + Muchas gracias!")
